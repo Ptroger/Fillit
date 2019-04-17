@@ -12,6 +12,7 @@ int		check_chars(char *map)
 
 	j = 0;
 	i = 0;
+	// A REVOIR
 	while (map[i])
 	{
 		if (map[i] == '\n')
@@ -40,6 +41,7 @@ char	*read_file(int	fd)
 	i = 0;
 	if ((read(fd, map, 546)) == -1)
 	{
+		// A FAIRE == ETRE SUR QUil Y A LE BON NOMBRE DE TTRIS
 		ft_putstr("READ ERROR");
 		return (NULL);
 	}
